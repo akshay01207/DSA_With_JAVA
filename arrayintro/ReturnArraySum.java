@@ -51,16 +51,18 @@ public class ReturnArraySum {
 	}
 
 	public static void main(String[] args) {
-		int t;
-		Scanner sc= new Scanner(System.in);
-//		t=sc.nextInt();
-//		while(t>0) {
-			int n=sc.nextInt();
-			int[] arr=new int[n];
+// 		int t;
+		System.out.println("Enter the No. of Elements: ");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		
+		System.out.println("Enter the Elements: ");
+		int[] arr = new int[n];
+		
 			for(int i=0;i<n;i++) {
 				arr[i]=sc.nextInt();
 			}
-			System.out.println(sum(arr));
+			System.out.println("The sum is : "+ sum(arr));
 //			t--;
 //		}
 	}

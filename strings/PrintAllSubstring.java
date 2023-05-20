@@ -52,6 +52,18 @@ public class PrintAllSubstring {
 				System.out.println(str.substring(start, end+1));
 			}
 		}
+		//===============================================================
+		
+		//Optimised Version
+		 for (int i = 0; i < n; i++) {
+            StringBuilder substr = new StringBuilder();
+	    //Used a StringBuilder to build the substrings instead of printing character by character, improving efficiency.
+            for (int j = i; j < n; j++) {
+                substr.append(str.charAt(j));
+                System.out.println(substr);
+            }
+        }
+		
 		*/
 		//printing length wise
 		for(int len=1;len<=str.length();len++) {

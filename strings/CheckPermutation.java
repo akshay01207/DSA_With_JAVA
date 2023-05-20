@@ -42,17 +42,28 @@ public class CheckPermutation {
 
 	static boolean isPermutation(String input1, String input2) {
 		
-		char[] a = input1.toCharArray();
-		char[] b = input2.toCharArray();
-		Arrays.sort(a);
-		Arrays.sort(b);
-		String str = new String(a);
-		String str1 = new String(b);
-		if (str.equals(str1)) {
-			return true;
-		}
-		return false;
-	}
+// 		char[] a = input1.toCharArray();
+// 		char[] b = input2.toCharArray();
+// 		Arrays.sort(a);
+// 		Arrays.sort(b);
+// 		String str = new String(a);
+// 		String str1 = new String(b);
+// 		if (str.equals(str1)) {
+// 			return true;
+// 		}
+// 		return false;
+// 	}
+		if (input1.length() != input2.length()) {
+	            return false;
+	        }
+	        
+	        char[] a = input1.toCharArray();
+	        char[] b = input2.toCharArray();
+	        Arrays.sort(a);
+	        Arrays.sort(b);
+	        
+	        return Arrays.equals(a, b);
+	    }
 
 	public static void main(String args[]) {
 		

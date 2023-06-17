@@ -24,3 +24,12 @@ class TestStaticFinal3{
 	} 
 
 
+/*
+Line 2: static functions cannot use non-static variables.
+
+Line 3: Static function cannot call non-static function.
+
+Line 4:this or super keyword cannot be used inside a static function.
+*/
+
+

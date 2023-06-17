@@ -13,7 +13,7 @@ class TestStaticFinal2{
 	    { 
 		   TestStaticFinal2 t=new TestStaticFinal2();
 	      t.fun();
-	      System.out.print(TestStaticFinal2.a+TestStaticFinal2.b);
+	      System.out.print(TestStaticFinal2.a+TestStaticFinal2.b); //50
 	    } 
 	} 
 
